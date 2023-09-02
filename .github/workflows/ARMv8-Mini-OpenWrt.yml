@@ -9,7 +9,9 @@
 name: ARMv8 Mini OpenWrt
 
 on:
-  workflow_dispatch:
+ branches:
+    - main
+ workflow_dispatch:
   # schedule:
     # - cron: 0 22 * * *
 
