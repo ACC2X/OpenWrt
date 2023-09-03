@@ -65,6 +65,7 @@ jobs:
         OPENWRT_ARMVIRT: openwrt-armvirt/*rootfs.tar.gz
         PACKAGE_SOC: all
         WHOAMI: Shuaizai
+        OPENWRT_VER: R${{ env.DATE1 }}
         KERNEL_VERSION_NAME: 5.15.13_6.1.5
         KERNEL_AUTO_LATEST: true
         DISTRIB_REVISION: R${{ env.DATE1 }} by Shuaizai
