@@ -10,12 +10,11 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-    - name: Delete Old Workflows
+    - name: Delete workflow runs
       uses: GitRML/delete-workflow-runs@main
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        retain_days: 7
-        keep_minimum_runs: 0
+        retain_days: 1
+        keep_minimum_runs: 3
 
     - name: Delete Old Releases
       uses: dev-drprasad/delete-older-releases@master
